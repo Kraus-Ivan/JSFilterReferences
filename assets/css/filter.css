@@ -32,3 +32,19 @@
 .reference__item.hide {
     display: none;
 }
+
+
+/* Pro hezčí vzhled */
+.btn__filter {
+    transition: 0.3s;
+}
+
+a.btn__filter {
+    text-decoration: none;
+}
+
+.btn__filter:hover {
+    background-color: var(--primary);
+    color: var(--light);
+    text-decoration: underline;
+}
