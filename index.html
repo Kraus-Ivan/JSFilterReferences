@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="SPŠSE a VOŠ Liberec" />
+    <meta name="robots" content="all,follow" />
+    <title>JS FilterReferences | SPŠSE a VOŠ Liberec</title>
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/page.css" />
+    <link rel="stylesheet" href="assets/css/filter.css" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/images/favicon.png" />
+    
+    <script src="assets/js/hamburger-menu.js"></script>
+
+</head>
+<body class="page">
+
+    <header class="page__header">
+        <nav class="navbar">
+            <a href="./" class="navbar__logo"><img src="./assets/images/logo.png" alt="logo" width="130px"></a>
+            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+              <li class="nav__item">
+                <a class="nav__item-link nav__item-link--active" href="./">Reference</a>
+              </li>
+            </menu>
+            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+        </nav>
+    </header>
+    <section class="section">
+        <header class="section__header">
+            <h1 class="heading">Reference</h1>
+            <p>Stojí za námi <strong>kvalitně vyhotovené zakázky</strong> dle konkrétních požadavků zadavatelů <strong>podepřené letitými zkušenostmi ve stavebnictví</strong>. To, že <strong>obrátit se na právě nás je vhodná volba potvrdí naši klienti</strong>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
+        </header>
+        <div class="reference">
+
+          <!-- jednotlivé filtry-->
+            <menu class="reference__filters">
+              <!-- data-filter => "co filtrovat"-->
+              <a href="?search=all" class="btn btn__filter btn__filter--active" data-filter="all">Všechny</a>
+            </menu>
+
+            <div class="reference__list">
+              <a href="#" class="reference__item" data-filter="rekonstrukce">
+                <figure>
+                    <img src="./assets/images/reference-hasicska-zbrojnice-600w.jpg" class="img-responsive" alt="Hasičská zbrojnice | Reference HM Building">
+                    <figcaption class="reference__item-description">
+                        <h2 class="heading">Hasičská zbrojnice</h2>
+                        <p>celková rekonstrukce</p>
+                    </figcaption>
+                </figure>
+              </a>
+              <a href="#" class="reference__item" data-filter="rekonstrukce" data-filtertext="Rekonstrukce">
+                <figure>
+                    <img src="./assets/images/reference-hasicska-zbrojnice-600w.jpg" class="img-responsive" alt="Hasičská zbrojnice | Reference HM Building">
+                    <figcaption class="reference__item-description">
+                        <h2 class="heading">Hasičská zbrojnice</h2>
+                        <p>celková rekonstrukce</p>
+                    </figcaption>
+                </figure>
+              </a>
+              <a href="#" class="reference__item">
+                <figure>
+                    <img src="./assets/images/reference-hasicska-zbrojnice-600w.jpg" class="img-responsive" alt="Hasičská zbrojnice | Reference HM Building">
+                    <figcaption class="reference__item-description">
+                        <h2 class="heading">Hasičská zbrojnice</h2>
+                        <p>celková rekonstrukce</p>
+                    </figcaption>
+                </figure>
+              </a>
+              <a href="#" class="reference__item" data-filter="upravy-opravy;rekonstrukce" data-filtertext="Úpravy a opravy;Rekonstrukce">
+                <figure>
+                    <img src="./assets/images/reference-pradelna-600w.jpg" class="img-responsive" alt="Hasičská zbrojnice | Reference HM Building">
+                    <figcaption class="reference__item-description">
+                        <h2 class="heading">Samoobslužná prádelna</h2>
+                        <p>stavební úpravy a opravy</p>
+                    </figcaption>
+                </figure>
+              </a>
+              <a href="#" class="reference__item" data-filter="zpevnene-plochy" data-filtertext="Zpevněné plochy">
+                <figure>
+                    <img src="./assets/images/reference-plocha-600w.jpg" class="img-responsive" alt="Hasičská zbrojnice | Reference HM Building">
+                    <figcaption class="reference__item-description">
+                        <h2 class="heading">Venkovní plochy Restyl</h2>
+                        <p>provedení venkovních ploch</p>
+                    </figcaption>
+                </figure>
+              </a>
+              <a href="#" class="reference__item" data-filter="novostavby" data-filtertext="Novostavby">
+                <figure>
+                    <img src="./assets/images/reference-chocen.jpg" class="img-responsive" alt="Hasičská zbrojnice | Reference HM Building">
+                    <figcaption class="reference__item-description">
+                        <h2 class="heading">Rodinný dům Choceň</h2>
+                        <p>novostavby</p>
+                    </figcaption>
+                </figure>
+              </a>
+              <a href="#" class="reference__item" data-filter="zpevnene-plochy" data-filtertext="Zpevněné plochy">
+                <figure>
+                    <img src="./assets/images/rekonstrukce-skorenice.jpg" class="img-responsive" alt="Hasičská zbrojnice | Reference HM Building">
+                    <figcaption class="reference__item-description">
+                        <h2 class="heading">Základová konstrukce rodinného domu</h2>
+                        <p>provedení venkovních ploch</p>
+                    </figcaption>
+                </figure>
+              </a>
+              <a href="#" class="reference__item" data-filter="rekonstrukce;novostavby" data-filtertext="Rekonstrukce;Novostavby">
+                <figure>
+                    <img src="./assets/images/reference-blanik.jpg" class="img-responsive" alt="Hasičská zbrojnice | Reference HM Building">
+                    <figcaption class="reference__item-description">
+                        <h2 class="heading">Rekonstrukce domu v Blaníku</h2>
+                        <p>rekonstrukce</p>
+                    </figcaption>
+                </figure>
+              </a>
+              <a href="#" class="reference__item" data-filter="prumyslove-stavby;rekonstrukce" data-filtertext="Průmyslové stavby;Rekonstrukce">
+                <figure>
+                    <img src="./assets/images/reference-diamo.jpg" class="img-responsive" alt="Hasičská zbrojnice | Reference HM Building">
+                    <figcaption class="reference__item-description">
+                        <h2 class="heading">Modernizace skladu Diamo</h2>
+                        <p>průmyslové stavby</p>
+                    </figcaption>
+                </figure>
+              </a>
+              <a href="#" class="reference__item" data-filter="zpevnene-plochy" data-filtertext="Zpevněné plochy">
+                <figure>
+                    <img src="./assets/images/reference-chotevice.jpg" class="img-responsive" alt="Hasičská zbrojnice | Reference HM Building">
+                    <figcaption class="reference__item-description">
+                        <h2 class="heading">Chodníky Chotěvice</h2>
+                        <p>provedení venkovních ploch</p>
+                    </figcaption>
+                </figure>
+              </a>
+            </div>
+        </div>
+    </section>
+    <script type="module">
+      //import {default as filerRun} from "./assets/js/filtermodule.js"4
+      import filterRun from "./assets/js/filtermodule.js"
+
+      const menu = document.querySelector(".reference__filters");
+      const itemList = document.querySelectorAll(".reference__item");
+
+      filterRun(menu, itemList);
+    </script>
+</body>
+</html>
