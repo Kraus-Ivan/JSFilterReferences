@@ -48,3 +48,7 @@ a.btn__filter {
     color: var(--light);
     text-decoration: underline;
 }
+
+.reference__filters li {
+    list-style: none;
+}

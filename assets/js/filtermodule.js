@@ -41,9 +41,12 @@ export default function (menu, itemList) {
 
       // Aktualizuje URL
       updateURL(button.dataset.filter);
+
     });
 
-    menu.appendChild(button);
+    const li = document.createElement("li");
+    li.appendChild(button);
+    menu.appendChild(li);
 
     // Aplikuje výchozí filtr při načtení stránky
     applyFilter("all");
